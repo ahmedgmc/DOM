@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Ws Dom</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <span class="navbar-brand mb-0 h1">Shopping Cart</span>
+            </div>
+          </nav>
+          <div class="row border-bottom">
+              <div class="col-md-2 mt-5">
+                  <input type="checkbox" class="check">
+              </div>
+              <div class="col-md-5">
+                   <h1>Broken bicycle</h1>
+                  <img height="250px" src="https://previews.123rf.com/images/raecher/raecher1707/raecher170700015/82328334-the-broken-bike.jpg" alt="product" class="mt-0">
+              </div>
+              <div class="col-md-3 mt-5">
+                  <button onclick="increment('inp1','pr1','tot_pr1')" class="add">+</button>
+                  <input id="inp1" type="text" value="0" class="quantity">
+                  <button onclick="decrement('inp1','pr1','tot_pr1')" class="remove">-</button>
+                </div>
+                  <p id="pr1" class="col-md-1 mt-5 unitPrice">150</p>
+                  <p id="tot_pr1" class="col-md-1 mt-5 price">0</p>            
+          </div>
+          <div class="row border-bottom">
+            <div class="col-md-2 mt-5">
+                <input type="checkbox" class="check">
+            </div>
+            <div class="col-md-5">
+              <h1>Audi R8</h1>
+                <img height="250px" src="https://www.carscoops.com/wp-content/uploads/2020/03/Audi-R8-V10-Wheelsandmore-112-1024x555.jpg" alt="product" class="mt-0">
+            </div>
+            <div class="col-md-3 mt-5">
+                <button class="add">+</button>
+                <input id="inp2" type="text" value="0" class="quantity">
+                <button  class="remove">-</button>
+            </div>
+            <p id="pr2" class="col-md-1 mt-5 unitPrice">5</p>
+            <p id="tot_pr2" class="col-md-1 mt-5 price">0</p>
+        </div>
+        <div class="alert-danger">
+            Total : <span id="total">0</span>
+        </div>
+    </div>
+  <script src="/script2.js"></script>
+  </body>
+</html>
